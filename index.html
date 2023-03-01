@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Editora</title>
+</head>
+
+<body bgcolor="gray">
+    <header>
+        <h1>Sistema de Editora 01.00.00</h1>
+    </header>
+
+    <hr>
+    <div cass="form">
+        <h3>Cadastrar livros na base de dados</h3>
+
+        <form action="https://target-api-simples.cyclic.app/livros" method="post">
+            <input type="text" name="title" id="" placeholder="Título do livro">
+           <input type="text" name="description" id="" placeholder="Descrição do livro">
+            <button>Mandar livros para API</button>
+        </form>
+    </div>
+    <p>Este formulário ira enviar im comando POST para que a API faça o trabalho dela</p>
+    <p>Neste caso, guardar na base de dados o que estamos enviando aqui.</p>
+    <hr>
+    <h3>Mostrar Livros já cadastrados</h3>
+    <div>
+        <form action="https://target-api-simples.cyclic.app/livros" method="get">
+            <button>Pedir livros para API</button>
+            <p>Este formulário irá enviar um comando GET para que a API faça o trabalho dela.</p>
+            <p>Neste caso, buscar na base de dados que já estão guardados</p>
+        </form>
+    </div>
+
+</body>
+
+
+</html>
